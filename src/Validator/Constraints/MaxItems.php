@@ -17,7 +17,7 @@ class MaxItems extends Count implements SchemaPathAwareConstraint
 
     public string $path;
 
-    public $maxMessage = self::TOO_MANY_MESSAGE;
+    public string $maxMessage = self::TOO_MANY_MESSAGE;
 
     public function __construct(int $value, string $path)
     {
@@ -31,7 +31,7 @@ class MaxItems extends Count implements SchemaPathAwareConstraint
         );
     }
 
-    public function validatedBy()
+    public function validatedBy(): string
     {
         return CountValidator::class;
     }

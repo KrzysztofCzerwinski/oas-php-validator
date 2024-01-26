@@ -7,7 +7,7 @@ use Symfony\Component\Validator\Constraints\IpValidator as Base;
 
 class IpValidator extends Base
 {
-    public function validate($value, Constraint $constraint)
+    public function validate($value, Constraint $constraint): void
     {
         if ($value === '') {
             $this->context

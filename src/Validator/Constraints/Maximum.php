@@ -14,11 +14,11 @@ class Maximum extends LessThanOrEqual implements SchemaPathAwareConstraint
 
     const TOO_HIGH_MESSAGE = 'Value {{ value }} exceeds maximum value of {{ compared_value }}';
 
-    public $value;
+    public mixed $value;
 
     public string $path;
 
-    public $message = self::TOO_HIGH_MESSAGE;
+    public string $message = self::TOO_HIGH_MESSAGE;
 
     /**
      * @param float|int $value

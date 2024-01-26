@@ -7,7 +7,7 @@ use Symfony\Component\Validator\Constraints\DateTimeValidator as Base;
 
 class DateTimeValidator extends Base
 {
-    public function validate($value, Constraint $constraint)
+    public function validate($value, Constraint $constraint): void
     {
         if ($value === '') {
             $this->context

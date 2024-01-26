@@ -15,11 +15,11 @@ class ExclusiveMaximum extends LessThan implements SchemaPathAwareConstraint
     const TOO_HIGH_MESSAGE = 'Value {{ value }} is greater or equal to maximum value of {{ compared_value }}';
 
     /** @var float|int  */
-    public $value;
+    public mixed $value;
 
     public string $path;
 
-    public $message = self::TOO_HIGH_MESSAGE;
+    public string $message = self::TOO_HIGH_MESSAGE;
 
     /**
      * @param float|int $value

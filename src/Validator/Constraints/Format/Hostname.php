@@ -8,5 +8,5 @@ class Hostname extends Base
 {
     const INVALID_HOSTNAME_MESSAGE = 'The value {{ value }} is not a valid hostname';
 
-    public $message = self::INVALID_HOSTNAME_MESSAGE;
+    public string $message = self::INVALID_HOSTNAME_MESSAGE;
 }

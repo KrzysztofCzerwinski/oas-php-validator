@@ -7,7 +7,7 @@ use Symfony\Component\Validator\Constraints\EmailValidator as Base;
 
 class EmailValidator extends Base
 {
-    public function validate($value, Constraint $constraint)
+    public function validate($value, Constraint $constraint): void
     {
         if ($value === '') {
             $this->context

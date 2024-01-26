@@ -16,7 +16,7 @@ class Pattern extends Regex implements SchemaPathAwareConstraint
 
     public string $path;
 
-    public $message = self::PATTERN_MISMATCH_MESSAGE;
+    public string $message = self::PATTERN_MISMATCH_MESSAGE;
 
     public function __construct(string $value, string $path)
     {

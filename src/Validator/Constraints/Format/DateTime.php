@@ -8,5 +8,5 @@ class DateTime extends Base
 {
     const INVALID_FORMAT_MESSAGE = 'This value {{ value }} is not a valid datetime';
 
-    public $message = self::INVALID_FORMAT_MESSAGE;
+    public string $message = self::INVALID_FORMAT_MESSAGE;
 }

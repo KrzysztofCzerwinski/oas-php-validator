@@ -8,5 +8,5 @@ class Email extends Base
 {
     const INVALID_FORMAT_MESSAGE = 'The value {{ value }} is not a valid e-mail.';
 
-    public $message = self::INVALID_FORMAT_MESSAGE;
+    public string $message = self::INVALID_FORMAT_MESSAGE;
 }

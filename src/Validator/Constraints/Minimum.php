@@ -16,7 +16,7 @@ class Minimum extends GreaterThanOrEqual implements SchemaPathAwareConstraint
 
     public string $path;
 
-    public $message = self::TOO_LOW_MESSAGE;
+    public string $message = self::TOO_LOW_MESSAGE;
 
     /**
      * @param float|int $value

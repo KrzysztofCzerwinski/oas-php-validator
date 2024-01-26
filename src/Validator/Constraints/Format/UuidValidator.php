@@ -7,7 +7,7 @@ use Symfony\Component\Validator\Constraints\UuidValidator as Base;
 
 class UuidValidator extends Base
 {
-    public function validate($value, Constraint $constraint)
+    public function validate($value, Constraint $constraint): void
     {
         if ($value === '') {
             $this->context

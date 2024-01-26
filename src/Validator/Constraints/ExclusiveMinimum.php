@@ -15,11 +15,11 @@ class ExclusiveMinimum extends GreaterThan implements SchemaPathAwareConstraint
     const TOO_LOW_MESSAGE = 'Value {{ value }} is less or equal to minimum value of {{ compared_value }}';
 
     /** @var float|int */
-    public $value;
+    public mixed $value;
 
     public string $path;
 
-    public $message = self::TOO_LOW_MESSAGE;
+    public string $message = self::TOO_LOW_MESSAGE;
 
     /**
      * @param float|int $value

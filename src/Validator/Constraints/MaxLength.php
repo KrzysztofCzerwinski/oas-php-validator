@@ -16,7 +16,7 @@ class MaxLength extends Length implements SchemaPathAwareConstraint
                             . 'String "{{ value }}" should have less than {{ limit }} characters';
     public string $path;
 
-    public $maxMessage = self::TOO_LONG_MESSAGE;
+    public string $maxMessage = self::TOO_LONG_MESSAGE;
 
     public function __construct(int $value, string $path)
     {
@@ -29,7 +29,7 @@ class MaxLength extends Length implements SchemaPathAwareConstraint
         );
     }
 
-    public function validatedBy()
+    public function validatedBy(): string
     {
         return LengthValidator::class;
     }

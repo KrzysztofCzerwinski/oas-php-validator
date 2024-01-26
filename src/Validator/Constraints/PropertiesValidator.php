@@ -9,7 +9,7 @@ use function OAS\Validator\isObject;
 
 class PropertiesValidator extends CollectionValidator
 {
-    public function validate($instance, Constraint $constraint)
+    public function validate($instance, Constraint $constraint): void
     {
         if (!$constraint instanceof Properties) {
             throw new UnexpectedTypeException($constraint, Properties::class);

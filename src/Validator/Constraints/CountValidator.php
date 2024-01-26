@@ -8,7 +8,7 @@ use function OAS\Validator\isList;
 
 class CountValidator extends BaseCountValidator
 {
-    public function validate($value, Constraint $constraint)
+    public function validate($value, Constraint $constraint): void
     {
         switch (get_class($constraint)) {
             case MaxProperties::class:

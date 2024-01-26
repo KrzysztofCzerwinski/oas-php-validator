@@ -8,7 +8,7 @@ use function OAS\Validator\isNumber;
 
 class ExclusiveMinimumValidator extends GreaterThanValidator
 {
-    public function validate($value, Constraint $constraint)
+    public function validate($value, Constraint $constraint): void
     {
         if (!isNumber($value)) {
             return;

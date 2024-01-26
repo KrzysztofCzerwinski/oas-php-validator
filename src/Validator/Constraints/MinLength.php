@@ -17,7 +17,7 @@ class MinLength extends Length implements SchemaPathAwareConstraint
 
     public string $path;
 
-    public $minMessage = self::TOO_SHORT_ERROR;
+    public string $minMessage = self::TOO_SHORT_ERROR;
 
     public function __construct(int $value, string $path)
     {
@@ -30,7 +30,7 @@ class MinLength extends Length implements SchemaPathAwareConstraint
         );
     }
 
-    public function validatedBy()
+    public function validatedBy(): string
     {
         return LengthValidator::class;
     }

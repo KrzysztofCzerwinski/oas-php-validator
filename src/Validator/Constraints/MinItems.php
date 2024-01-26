@@ -17,7 +17,7 @@ class MinItems extends Count implements SchemaPathAwareConstraint
 
     public string $path;
 
-    public $minMessage = self::TOO_FEW_MESSAGE;
+    public string $minMessage = self::TOO_FEW_MESSAGE;
 
     public function __construct(int $value, string $path)
     {
@@ -31,7 +31,7 @@ class MinItems extends Count implements SchemaPathAwareConstraint
 
     }
 
-    public function validatedBy()
+    public function validatedBy(): string
     {
         return CountValidator::class;
     }

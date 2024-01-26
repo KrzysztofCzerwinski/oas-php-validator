@@ -7,7 +7,7 @@ use Symfony\Component\Validator\Constraints\LengthValidator as BaseLengthValidat
 
 class LengthValidator extends BaseLengthValidator
 {
-    public function validate($value, Constraint $constraint)
+    public function validate($value, Constraint $constraint): void
     {
         if (!is_string($value)) {
             return;

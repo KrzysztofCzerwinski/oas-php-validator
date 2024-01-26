@@ -8,5 +8,5 @@ class Ip extends Base
 {
     const INVALID_IP_MESSAGE = 'The value {{ value }} is not a valid e-mail';
 
-    public $message = self::INVALID_IP_MESSAGE;
+    public string $message = self::INVALID_IP_MESSAGE;
 }
